@@ -23,7 +23,7 @@ unset($_SESSION['error']); // Clear error messages after displaying
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link href="/Dimora/public/css/tailwind.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,11 +94,12 @@ unset($_SESSION['error']); // Clear error messages after displaying
         </div>
     </header>
     <br>
-    <main>
-        <div class="form w-[100px] max-w-[100px] mx-auto p-4">
 
+
+    <main>
+        <div class="form px-10">
             <h1 class="text-7xl text-center font-bold font-serif mb-16">SIGN UP</h1>
-            <form action="http://localhost/Dimora/app/views/signup.php" method="POST" enctype="multipart/form-data" onsubmit="validateForm(event)" class="space-y-4">
+            <form action="http://localhost/Dimora/app/views/signup.php" method="POST" enctype="multipart/form-data" class="space-y-4 w-full">
                 <!-- Email Input -->
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
@@ -146,7 +147,7 @@ unset($_SESSION['error']); // Clear error messages after displaying
                 <!-- Profile Picture Upload -->
                 <div>
                     <label for="profilePicture" class="block text-sm font-medium text-gray-700">Profile Picture</label>
-                    <input type="file" id="profilePicture" name="profilePicture" class="w-full px-3 py-2 rounded-md focus:outline-none focus:ring focus:ring-brown-300">
+                    <input type="file" id="profilePicture" name="profilePicture" class=" px-3 py-2 rounded-md focus:outline-none focus:ring focus:ring-brown-300">
                 </div>
                 
                 <!-- <label class="inline-flex items-center mb-4">
@@ -155,13 +156,12 @@ unset($_SESSION['error']); // Clear error messages after displaying
                 </label> -->
 
                 <!-- Submit Button -->
-                <button type="submit" class="w-full bg-brown-150 font-bold text-white py-2 px-4 rounded">
+                <button type="submit" class=" w-full w-md bg-brown-150 font-bold text-white py-2 px-4 rounded">
                     Sign Up
                 </button>
                 <br>
                 <div id="errorContainer" class="mb-4"></div>
             </form>
-
             <div class="p-10 flex flex-col items-center space-y-4">
                 <!-- Sign In Link -->
                 <p class="text-bold font-bold text-gray-700 mt-4">
@@ -169,8 +169,9 @@ unset($_SESSION['error']); // Clear error messages after displaying
                     <a href="./signin.php" class="text-blue-600 hover:underline">Sign In</a>
                 </p>
             </div>
-        </div>       
+        </div>      
     </main>
     <?php include './layout/footer.php' ?>
 </body>
 </html>
+
