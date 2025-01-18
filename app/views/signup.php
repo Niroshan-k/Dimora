@@ -25,6 +25,7 @@ unset($_SESSION['error']); // Clear error messages after displaying
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link href="/Dimora/public/css/tailwind.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -97,9 +98,9 @@ unset($_SESSION['error']); // Clear error messages after displaying
 
 
     <main>
-        <div class="form px-10">
+        <div class="form">
             <h1 class="text-7xl text-center font-bold font-serif mb-16">SIGN UP</h1>
-            <form action="http://localhost/Dimora/app/views/signup.php" method="POST" enctype="multipart/form-data" class="space-y-4 w-full">
+            <form action="http://localhost/Dimora/app/views/signup.php" method="POST" enctype="multipart/form-data" class="space-y-4">
                 <!-- Email Input -->
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>

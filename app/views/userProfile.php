@@ -35,6 +35,7 @@ if (!$userData) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/fav.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/Dimora/public/css/tailwind.css" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->

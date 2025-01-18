@@ -44,6 +44,7 @@ if (isset($_SESSION['error']['general'])) {
 <html lang="en">
 <head>
     <title>Edit Advertisement</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/fav.png">
 </head>
 <body>
     <?php include './layout/customerHeader.php'; ?>

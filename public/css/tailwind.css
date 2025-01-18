@@ -592,7 +592,7 @@ video {
   display: flex;
   min-height: 100vh;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1045,11 +1045,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pt-10 {

@@ -14,8 +14,9 @@ $controller->signin();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In</title>
     <link href="/Dimora/public/css/tailwind.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -47,7 +48,7 @@ $controller->signin();
     </header>
     <main>
         <!-- Form Content -->
-        <div class="m-10 w-16">
+        <div class="m-10">
 
             <h1 class="text-7xl text-center font-bold font-serif mb-16">SIGN IN</h1>
             <form action="http://localhost/Dimora/App/views/signin.php" method="POST" class="space-y-4 w-16 p-10">
