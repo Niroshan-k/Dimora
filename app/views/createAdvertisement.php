@@ -26,7 +26,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="/Dimora/public/css/tailwind.css" rel="stylesheet"> -->
+    <link href="/Dimora/public/css/tailwind.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/fav.png">
@@ -74,6 +74,7 @@
 
                 <!-- Map -->
                 <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                <p class="text-red-150 text-sm">Choose your location, click once and wait:</p>
                 <div id="map" class="rounded mb-4"></div>
                 <input type="hidden" id="location" name="location" class="w-full p-2 bg-brown-50 rounded" readonly>
             </div>
@@ -112,7 +113,7 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         // Initialize Leaflet map
-        const map = L.map('map').setView([0, 0], 2);
+        const map = L.map('map').setView([5, 5], 2);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);

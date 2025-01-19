@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .form {
+    .for {
         @apply w-full max-w-[600px] px-32 p-6 flex flex-col items-center justify-center min-h-screen;
     }
 }

@@ -98,9 +98,9 @@ unset($_SESSION['error']); // Clear error messages after displaying
 
 
     <main>
-        <div class="form">
+        
             <h1 class="text-7xl text-center font-bold font-serif mb-16">SIGN UP</h1>
-            <form action="http://localhost/Dimora/app/views/signup.php" method="POST" enctype="multipart/form-data" class="space-y-4">
+            <form action="http://localhost/Dimora/app/views/signup.php" method="POST" enctype="multipart/form-data" class="space-y-4 max-w-xl mx-auto p-6 rounded-lg">
                 <!-- Email Input -->
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
@@ -169,8 +169,7 @@ unset($_SESSION['error']); // Clear error messages after displaying
                     Already have an account? 
                     <a href="./signin.php" class="text-blue-600 hover:underline">Sign In</a>
                 </p>
-            </div>
-        </div>      
+            </div>     
     </main>
     <?php include './layout/footer.php' ?>
 </body>

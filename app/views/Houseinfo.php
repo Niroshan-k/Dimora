@@ -89,7 +89,8 @@ $coordinates = getCoordinates($advertisement['location']);
         <!-- House Details -->
         <section class="mt-11 px-8 py-4">
             <h1 class="text-4xl font-bold font-serif"><?php echo htmlspecialchars($advertisement['name']); ?></h1>
-            <p class="text-gray-600"><?php echo htmlspecialchars($advertisement['location']); ?></p>
+            <br>
+            <p class="text-gray-600"><b>Address : </b><?php echo htmlspecialchars($advertisement['location']); ?></p>
             <h2 class="text-3xl text-green-500 font-serif font-bold">$<?php echo htmlspecialchars($advertisement['price']); ?></h2>
         </section>
         <hr>
@@ -103,7 +104,6 @@ $coordinates = getCoordinates($advertisement['location']);
                 <hr>
                 <br>
                 <ul>
-                    <li class="mb-2"><i class="fas fa- "></i> Name: <?php echo htmlspecialchars($advertisement['name']); ?></li>
                     <li class="mb-2"><i class="fas fa-home"></i> Type: <?php echo htmlspecialchars($advertisement['type']); ?></li>
                     <li class="mb-2"><i class="fas fa-bed"></i> Bedroom: <?php echo htmlspecialchars($advertisement['bedroom']); ?></li>
                     <li class="mb-2"><i class="fas fa-bath"></i> Bathroom: <?php echo htmlspecialchars($advertisement['bathroom']); ?></li>
@@ -126,9 +126,11 @@ $coordinates = getCoordinates($advertisement['location']);
                 </form>
             </div>
         </div>
+        
         <hr>
         <!-- Google Maps -->
         <div class="grid gap-8 px-8 py-6">
+            <h1 class="text-2xl font-semibold font-serif">Location</h1>
             <!-- Left: Map -->
             <div id="map" class="w-full h-96 rounded-md shadow-md"></div>
         </div>

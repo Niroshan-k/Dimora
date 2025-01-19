@@ -51,7 +51,7 @@ $controller->signin();
         <div class="m-10">
 
             <h1 class="text-7xl text-center font-bold font-serif mb-16">SIGN IN</h1>
-            <form action="http://localhost/Dimora/App/views/signin.php" method="POST" class="space-y-4 w-16 p-10">
+            <form action="http://localhost/Dimora/App/views/signin.php" method="POST" class="space-y-4 max-w-xl mx-auto p-6 rounded-lg">
                 
 
                 <!-- Username Input -->

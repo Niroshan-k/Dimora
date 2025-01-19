@@ -40,7 +40,7 @@ $advertisements = $Controller->advertisements; // Access the advertisements
                     </div>
 
                     <!-- Bottom Section: Details -->
-                    <a href="../app/views/Landinfo.php">
+                    <a href="./Houseinfo.php?house_id=<?php echo $ad['house_id']; ?>">
                     <div class="p-4">
                         <!-- Property Name -->
                         <h2 class="text-lg font-bold text-gray-800"><?php echo htmlspecialchars($ad['name']); ?></h2>
@@ -67,14 +67,30 @@ $advertisements = $Controller->advertisements; // Access the advertisements
                 </div>
             <?php endforeach; ?>
             </div>
-            <!-- More Button -->
-            <div class="flex justify-end mt-6">
-                <button class="bg-green-50 text-white font-bold py-2 px-4 rounded-sm shadow-lg">
-                    More
-                </button>
-            </div>
         </div>
     </div>
 
 </body>
+<script>
+    function toggleBookmark(button) {
+        const icon = button.querySelector('i');
+        const isSaved = button.getAttribute('data-saved') === 'true';
+
+        if (isSaved) {
+            icon.classList.remove('text-blue-500');
+            icon.classList.add('text-white');
+        } else {
+            icon.classList.remove('text-white');
+            icon.classList.add('text-blue-500');
+        }
+
+        button.setAttribute('data-saved', !isSaved);
+    }
+    function toggleHeart(button) {
+        const icon = button.querySelector('i');
+        // Toggle the colors between red and gray
+        icon.classList.toggle('text-red-500');
+        icon.classList.toggle('text-gray-500');
+    }
+</script>
 </html>
