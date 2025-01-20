@@ -48,7 +48,7 @@ $coordinates = getCoordinates($advertisement['location']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Information</title>
+    <title>Dimora</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/fav.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@ $coordinates = getCoordinates($advertisement['location']);
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link href="../../public/css/tailwind.css" rel="stylesheet"> -->
+    <link href="../../public/css/tailwind.css" rel="stylesheet">
     <style>
         .slider img {
             width: 100%;

@@ -25,7 +25,7 @@
                         <label for="type" class="block text-sm text-gray-600 font-bold">Type</label>
                         <select id="type" class="w-full bg-brown-50 mt-1 px-4 py-2 rounded-sm">
                             <option>Luxury House</option>
-                            <option>Residantal House</option>
+                            <option>Residential House</option>
                             <option>Traditional House</option>
                             <option>Modern House</option>
                         </select>

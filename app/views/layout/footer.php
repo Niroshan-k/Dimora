@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="/Dimora/public/css/tailwind.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <footer class="bg-yellow-50 text-black font-inter">
@@ -28,9 +29,9 @@
     </div>
 
     <!-- Middle Section: Footer Links -->
-    <div class="grid grid-cols-4 gap-8 px-10 py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 sm:px-10 py-16">
         <!-- About Section -->
-        <div class="text-left">
+        <div>
             <h3 class="font-bold font-serif text-2xl mb-4">About</h3>
             <ul class="space-y-2">
                 <li><a href="#" class="text-gray-400 hover:text-black">Our Story</a></li>
@@ -41,7 +42,7 @@
         </div>
 
         <!-- Contact Us Section -->
-        <div class="text-left">
+        <div>
             <h3 class="font-bold font-serif text-2xl mb-4">Contact Us</h3>
             <ul class="space-y-2">
                 <li><a href="#" class="text-gray-400 hover:text-black">Email</a></li>
@@ -52,7 +53,7 @@
         </div>
 
         <!-- Services Section -->
-        <div class="text-right">
+        <div>
             <h3 class="font-bold font-serif text-2xl mb-4">Services</h3>
             <ul class="space-y-2">
                 <li><a href="#" class="text-gray-400 hover:text-black">Property Listing</a></li>
@@ -63,7 +64,7 @@
         </div>
 
         <!-- Others Section -->
-        <div class="text-right">
+        <div>
             <h3 class="font-bold font-serif text-2xl mb-4">Others</h3>
             <ul class="space-y-2">
                 <li><a href="#" class="text-gray-400 hover:text-black">FAQ</a></li>
